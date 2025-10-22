@@ -10,3 +10,9 @@ Percobaan 2 :
 b) continue digunakan untuk melewati iterasi pada 1x perulangan tersebut dan akan kembali pada pengecekan kondisi untuk kembali menjalankan perulangan
 2. i++ dituliskan di akhir agar perhitungan indeks mahasiswa dilakukan setelah proses input dan pengecekan nilai siswa selesai kemudian perulangan lanjut ke mahasiswa 2, 3, dan seterusnya, akan berpengaruh jika ada continue perintah, maka nilai i/penomoran mahasiswa akan tetap sama karena belum ditambahkan. Apabila increment diletakkan di awal perulangan, nilai i akan bertambah sebelum input dilakukan dan urutan penomoran mahasiswa bertambah lebih dulu, apabila ada kondisi continue maka i akan tetap bertambah meskipun inputan belum benar, sehingga jumlah inputan yang diminta kurang dari seharusnya
 3. 19 kali, karena dimulai dari i = 0 dan berenti di i = 18
+
+Percobaan 3 :
+1. tidak dilakukan perulangan, karena pemrograman akan berhenti setelah nama pelanggan diinput 'batal'
+2. kondisi berhenti pada perintah 'if (namaPelanggan.equalsIgnoreCase("batal"))', perulangan akan berhenti ketika user menginputkan 'batal' pada nama pelanggan dan keluar dari perulangan menggunakan break
+3. perulangan akan berjalan terus-menerus, hanya berhenti jika ada perintah break. 'true' membuat perulangan terus berjalan hingga user memberhentikannya secara manual (dengan mengetikka 'break')
+4. pada perulangan do-while tidak membutuhkan inisialisasi dan update, perulangan akan berhenti ketika ada perintah break yang memaksa keluar dari perulangan
