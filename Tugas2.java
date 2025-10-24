@@ -6,9 +6,16 @@ public class Tugas2 {
 
         int jenis, durasi, total = 0;
 
-        do {
-            System.out.print("(1)Mobil\n(2)Motor(0)Keluar\nMasukkan jenis kendaraan : ");
+        while (true) {
+            System.out.print("(1)Mobil\n(2)Motor\n(0)Keluar\nMasukkan jenis kendaraan : ");
             jenis = sc.nextInt();
+
+            if (jenis==0) {
+                break;
+            } if (jenis>2) {
+                System.out.println("Jenis kendaraan tidak valid!");
+                continue;
+            }
 
             System.out.print("Masukkan lama durasi parkir (menit) : ");
             durasi = sc.nextInt();
@@ -19,11 +26,12 @@ public class Tugas2 {
                 total = durasi*3000;
             } else if (jenis==2) {
                 total = durasi*2000;
-            }
+            } 
 
             System.out.println("Total biaya parkir : Rp."+total);
+            System.out.println();
             
-        } while (jenis != 0);
+        }
 
 
     }
