@@ -13,7 +13,15 @@ public class Tugas2 {
             System.out.print("Masukkan lama durasi parkir (menit) : ");
             durasi = sc.nextInt();
 
-            
+            if (durasi>5) {
+                total = 12500;
+            } else if (jenis==1) {
+                total = durasi*3000;
+            } else if (jenis==2) {
+                total = durasi*2000;
+            }
+
+            System.out.println("Total biaya parkir : Rp."+total);
             
         } while (jenis != 0);
 
