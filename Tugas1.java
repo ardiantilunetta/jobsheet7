@@ -16,6 +16,16 @@ public class Tugas1 {
                 continue;
             }
 
+            if (pelanggan>4) {
+                harga = pelanggan*hargatiket-(pelanggan*hargatiket*0.1);
+            } else if (pelanggan>10) {
+                harga = pelanggan*hargatiket-(pelanggan*hargatiket*0.15);
+            } else {
+                harga = pelanggan*hargatiket;
+            }
+
+            System.out.println("Total harga pelanggan : "+harga);
+            
         } while (true);
     }
 }
