@@ -35,7 +35,7 @@ public class Tugas1 {
 
         } while (ulang.equalsIgnoreCase("ya"));
 
-        System.out.println("----- REKAP PENJUALAN HARI INI----");
+        System.out.println("----- REKAP PENJUALAN HARI INI-----");
         System.out.println("Total tiket terjual hari ini : "+totaltiket);
         System.out.println("Total pendapatan hari ini : "+totalpenjualan);
     }
